@@ -1,5 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+*{
+  color: snow;
+}
+body{
+  background-color: #282c34;
+}
+#login{
+  
+}
+input{
+  background:snow;
+  color: #282c34;
+  width: 400px;
+  height: 30px;
+  border: none;
+
+}
+
+button
+{
+  background:snow;
+  color: #282c34;
+  width: 100px;
+  height: 50px;
+  border: none;
+}
 .App {
   text-align: center;
+  /* background-color: #282c34; */
 }
 
 .App-logo {
