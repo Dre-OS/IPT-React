@@ -2,12 +2,22 @@
 
 *{
   color: snow;
+  filter: drop-shadow(1px 1px 2px #00000070);
 }
 body{
-  background-color: #282c34;
+  background: url(./assets/bg.jpg);
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h2{
+  font-size: 50px;
 }
 #login{
-  
+    
 }
 input{
   background:snow;
@@ -15,20 +25,15 @@ input{
   width: 400px;
   height: 30px;
   border: none;
-
 }
 
 button
 {
-  background:snow;
-  color: #282c34;
+  /* background:snow; */
+  /* color: #282c34; */
   width: 100px;
   height: 50px;
   border: none;
-}
-.App {
-  text-align: center;
-  /* background-color: #282c34; */
 }
 
 .App-logo {
@@ -45,10 +50,10 @@ button
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
-  display: flex;
+  /* display: inherit;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
 }
