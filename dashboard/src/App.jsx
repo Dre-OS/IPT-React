@@ -1,27 +1,24 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import bg from './assets/bg.jpg'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Register from './pages/register';
+import Login from './pages/login';
+import logo from './assets/Logo mono.png'
 import viteLogo from '/vite.svg'
 import './App.css'
+import register from './pages/register';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div className="App">
-        <h2>Login Form</h2>
-        <div id="login">
-          Username: &nbsp;<br />
-          <input type="text" id="username" />
-          <br /><br />
-          Password: &nbsp;<br />
-          <input type="password" id="password" />
-          <br /><br />
-          <button type="submit">Login</button>
-        </div>
-    </div>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Register/>}></Route>
+        <Route path="/" element={<Login/>}></Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
