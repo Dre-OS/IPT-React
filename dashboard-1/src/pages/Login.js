@@ -1,13 +1,16 @@
 import React from 'react';
 import logo from './assets/Logo mono.png'
-import "./Login.css";
+import "./login.css";
+import { useNavigate } from "react-router-dom";
 function Login() {
+
+  const navigate = useNavigate();
+
   return (
-    <div>
-        <div class="bg"></div>
+    <div className='root'>
         <img src={logo} alt="logo" class="App-logo"/>
         <h2>Login</h2>
-        <div id="login">
+        <div id="textInput">
           <span className="h3">Username: &nbsp;</span><br />
           <input type="text" id="username" />
           <br /><br />
@@ -15,7 +18,7 @@ function Login() {
           <input type="password" id="password" />
           <br /><br />
           <button type="submit">Login</button>
-          <button type="submit">Sign Up</button>
+          <button type="submit" onClick={()=> navigate('/register')}>Register</button>
           </div>
     </div>
   )
